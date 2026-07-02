@@ -1,0 +1,14 @@
+ai-git-generator/
+│
+├── main.py                 # 프로그램 시작
+├── git_utils.py            # git status, diff 수집
+├── ai_client.py            # AI API 호출
+├── prompt_builder.py       # 프롬프트 생성
+├── formatter.py            # 출력 형식 검증
+├── config.py               # 환경변수
+├── safe_mode.py            # 민감정보 마스킹
+│
+├── requirements.txt
+├── README.md
+├── .env.example
+└── .gitignore
