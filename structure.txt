@@ -12,3 +12,12 @@ ai-git-generator/
 ├── README.md
 ├── .env.example
 └── .gitignore
+
+1단계: CLI 만들기
+python
+    ↓
+main.py
+    ↓
+commit 또는 pr
+    ↓
+옵션
