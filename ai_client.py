@@ -63,21 +63,21 @@ def generate_pr_message(
     Git Diff
     {diff}
 
-    변경사항을 분석하여 GitHub Pull Request를 작성해.
+    위 변경사항을 분석하여 GitHub Pull Request를 작성해.
 
-    다음 형식을 반드시 지켜.
+    반드시 아래 형식을 지켜.
 
     PR Title:
     (한 줄 제목)
 
     Why
-    - 변경 배경 1개 이상
+    - 변경 배경을 작성
 
     What
-    - 변경 사항 1개 이상
+    - 핵심 변경사항을 작성
 
     How to Test
-    - 테스트 방법 1개 이상
+    - 테스트 방법을 작성
 
     설명은 하지 말고 위 형식만 출력해.
     """

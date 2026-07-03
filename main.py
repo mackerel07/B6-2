@@ -16,7 +16,7 @@ def main():
 
     parser.add_argument(
         "--model",
-        default="gpt-4.1-mini",
+        default="gemini-2.5-flash",
         help="AI 모델"
     )
 
@@ -55,15 +55,32 @@ def main():
 
     if args.command == "commit":
         print("Commit 명령 실행")
-        message = generate_commit_message(status, diff)
+        message = generate_commit_message(
+            status,
+            diff,
+            args.model,
+            args.temperature,
+            args.max_tokens
+        )
         print("\n=== AI Commit Message ===")
         print(message)
 
     elif args.command == "pr":
-        print("PR 명령 실행")
-        message = generate_pr_message(status, diff)
-        print("\n=== AI PR Description ===")
+        print("=" * 50)
+        print("AI Pull Request")
+        print("=" * 50)
+
+        message = generate_pr_message(
+            status,
+            diff,
+            args.model,
+            args.temperature,
+            args.max_tokens
+        )
+
         print(message)
+
+        print("=" * 50)
 
 if __name__ == "__main__":
     main()
